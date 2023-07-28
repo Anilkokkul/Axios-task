@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.card-body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    background-color: #ffefb6;
+    width: 300px;
+    height: 100%;
+    padding: 25px;
+    margin: 10px;
+    line-height: 2rem;
+    text-align: start;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.card h3{
+    text-align: center;
+    margin: 0;
+}
+.form{
+    background-color: antiquewhite;  
+    margin-top: 30px;
+    border: 1px solid black;
+    width: 300px;
+    padding: 2%;
+    text-align: start;
+    border-radius: 10px;
+}
+.form input{
+    height: 20px;
+    width: 100%;
+}
+.form h4{
+    text-align: center;
+    margin: 0;
+}
+.container-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form button,.dailogueBox button, .card button{
+    padding: 10px;
+    border-radius: 15px;
+   margin-top: 20px;
+   cursor: pointer;
+   border: none;
+   background-color:#f1cd78;
+}
+.card button{
+    bottom: 10px;
+}
+.dailogueBox{
+    width: 500px;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: justify;
+    padding: 30px;
+}
