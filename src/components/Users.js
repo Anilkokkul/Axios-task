@@ -31,7 +31,6 @@ const Users = () =>{
 
     const addUser = async (e) => { //this will add the new data in server using the data coming from input
         e.preventDefault()
-            try {
                 const payload = {
                     name : newName,
                     phone : newNumber,
@@ -47,7 +46,7 @@ const Users = () =>{
                     website: newWebsite
                 };
                 setShowDailogue(true)
-                const response = await addUserDetails(payload);
+                await addUserDetails(payload);
                 // if(response.data){
                 //     setNewName("");
                 //     setNewNumber("");
@@ -62,10 +61,6 @@ const Users = () =>{
                 //     setzipcode("");
                 //     getUserDetails();
                 // }
-            } catch(err){
-                 err = "data not found"
-                return err;
-            }
 
     }
     const resetData = () => {
@@ -100,7 +95,7 @@ const Users = () =>{
                 company: newCompany,
                 website: newWebsite
             };
-            const response = await updateUserById(updateUserId,payload);
+            await updateUserById(updateUserId,payload);
             // if(response.data){
             //     setNewName("");
             //     setNewNumber("");

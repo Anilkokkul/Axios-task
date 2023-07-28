@@ -1,5 +1,4 @@
 import Users from './components/Users';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
